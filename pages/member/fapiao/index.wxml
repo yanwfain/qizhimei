@@ -1,0 +1,35 @@
+<view class="cont" wx:for="{{list}}">
+  <view class="name">
+    <view class="name_s">
+      单位名称:
+    </view>
+    <view class="num">
+      {{item.invoice_name}}
+    </view>
+  </view>
+  <view class="name">
+    <view class="name_s">
+      纳税人识别号:
+    </view>
+    <view class="num">
+      {{item.invoice_num}}
+    </view>
+  </view>
+  <view class="bina">
+    <view class="ddd" bindtap="select"  data-index="{{index}}" data-invoice_name="{{item.invoice_name}}" data-invoice_num="{{item.invoice_num}}" data-id="{{itemn.id}}">
+
+      <radio checked="{{item.isdefault>0?true:false}}" class="zoom-70" color="#fd5454" name="default" style="font-size:40rpx;">选择</radio>
+    </view>
+
+    <view class="bianij" bindtap="bianjiFn" data-id="{{item.id}}">
+      编辑
+    </view>
+    <view class="dele" bindtap="deleFn" data-id="{{item.id}}">
+      删除
+    </view>
+  </view>
+</view>
+
+<view class="fix" bindtap="addnewFn">
+  添加新单位
+</view>

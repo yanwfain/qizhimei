@@ -1,0 +1,42 @@
+/* pages/member/fapiao-delits/index.wxss */
+.cont{
+  width: 90%;
+  padding: 20rpx;
+  /* background: white; */
+  margin: 0 auto;
+  margin-bottom: 10rpx; 
+  margin-top: 10rpx;
+  
+}
+.name{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.name_s{
+  width: 30%;
+  font-size: 28rpx;
+  padding:10rpx 0;
+}
+.num{
+  width: 58%;
+  padding: 1%;
+  margin-left: 2%;
+  margin-right: 8%;
+  font-size: 28rpx;
+  background: white;
+}
+.btns{
+  margin:  0 auto;
+  width: 30%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  
+  margin-top:100rpx;
+  background: red;
+  color: white;
+  border-radius: 20rpx;
+}

@@ -1,0 +1,11 @@
+<!--pages/commission/list/index.wxml-->
+<view class="list" bindtap="lsitFn">
+  <image class="img1" src="https://hcc.baike360.cn/kefu.png" data-to_avatar="{{img}}" data-title_name="{{titopst}}"></image>
+  <view class="name">客服</view>
+  <view class="yuan" wx:if="{{custodelit!=0}}">{{custodelit}}</view>
+</view>
+<view class="list" wx:for="{{delit}}" data-to_avatar="{{item.to_avatar}}" data-title_name="{{item.to_name}}" data-openids="{{item.to_openid}}" data-avatar="{{item.to_avatar}}" bindtap="lsit">
+  <image class="img1" src="{{item.to_avatar}}"></image>
+  <view class="name">{{item.to_name}}</view>
+  <view class="yuan" wx:if="{{item.is_read!=0}}">{{item.is_read}}</view>
+</view>

@@ -1,0 +1,84 @@
+<!-- <view class="bcg">-->
+<view id="ops">
+
+  <view class="cont" wx:for="{{delit}}">
+    <view wx:if="{{kefu==0}}">
+      <view class="rights1 o" wx:if="{{item.option_type != 2}}">
+        <view class="times">{{item.created_at}}</view>
+        <view class="user_conts">
+          <image src="{{user}}"></image>
+          <view class="views">
+            <view class="greens" wx:if="{{item.is_img==1}}">{{item.content}}</view>
+            <view class="greensimg" style="background:white"  wx:if="{{item.is_img==2}}"> <image bindtap="topic_preview" style="width:300rpx;height:400rpx;" data-img="{{item.content}}" src="{{item.content}}"></image> </view>
+          </view>
+
+        </view>
+      </view>
+      <view class="o" wx:else="">
+        <!-- {{_num==1?'time_right':''}} -->
+        <view class="time ">{{item.created_at}}</view>
+        <view class="user_cont">
+          <image src="{{avatar}}"></image>
+          <view class="views">
+            <view class="whites" wx:if="{{item.is_img==1}}">{{item.content}}</view>
+            <view class="whitesimg" style="background:white"  wx:if="{{item.is_img==2}}"> <image bindtap="topic_preview" style="width:300rpx;height:400rpx;" data-img="{{item.content}}" src="{{item.content}}"></image> </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:else>
+      <view class="rights1 o" wx:if="{{item.fire_openid != openids}}">
+        <view class="times">{{item.created_at}}</view>
+        <view class="user_conts">
+          <image src="{{user}}"></image>
+          <view class="views">
+            <view class="greens" wx:if="{{item.is_img==1}}">{{item.content}}</view>
+            <view class="greensimg" style="background:white"  wx:if="{{item.is_img==2}}"> <image bindtap="topic_preview" style="width:300rpx;height:400rpx;" data-img="{{item.content}}" src="{{item.content}}"></image> </view>
+          </view>
+
+        </view>
+      </view>
+      <view class="o" wx:else="">
+        <!-- {{_num==1?'time_right':''}} -->
+        <view class="time ">{{item.created_at}}</view>
+        <view class="user_cont">
+          <image src="{{avatar}}"></image>
+          <view class="views">
+           <view class="whites" wx:if="{{item.is_img==1}}">{{item.content}}</view>
+            <view class="whitesimg" style="background:white"  wx:if="{{item.is_img==2}}"> <image bindtap="topic_preview" style="width:300rpx;height:400rpx;" data-img="{{item.content}}" src="{{item.content}}"></image> </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+
+
+  <!-- <view style="height:100rpx;"></view> -->
+</view>
+
+<!--</view> -->
+<!-- <view style="height:400rpx;"></view> -->
+<view class="bot">
+  <view class="detail-view">
+    <textarea placeholder="请输入新的消息" cursor-spacing="90" auto-height="true" fixed="true" show-confirm-bar="true" class='detail-textarea' value="{{input_firm}}" bindconfirm="bindconfirm" auto-height='true' value="{{input_firm}}" maxlength='200' bindinput='getTextareaInput'
+    />
+  </view>
+  <view class="fui-cell">
+    <!-- <view class="fui-cell-label">上传产品图</view> -->
+    <view class="fui-images fui-images-sm">
+      <block wx:for="{{imgs}}">
+        <!-- <image catchtap="upload" class="image image-sm" data-index="{{index}}" data-type="image-preview" src="{{item}}">
+          <text catchtap="upload" class="image-remove" data-index="{{index}}" data-type="image-remove">
+                                            <text class="icox icox-close"></text>
+          </text>
+        </image> -->
+      </block>
+    </view>
+    <view catchtap="upload" class="fui-uploader fui-uploader-sm" data-type="image"></view>
+  </view>
+  <view class="fasong" bindtap="faFn">
+    发送
+  </view>
+</view>

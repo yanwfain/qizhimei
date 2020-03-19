@@ -1,0 +1,42 @@
+<view class="cont">
+  <view class="name">
+    <view class="name_s">
+      单位名称
+    </view>
+    <input class="num" placeholder="请输入" value="{{name}}" bindinput="inpt" />
+  </view>
+  <view class="name">
+    <view class="name_s">
+      纳税人识别号
+    </view>
+    <input class="num" placeholder="请输入" value="{{num}}" bindinput="inpts" />
+  </view>
+  <view class="name">
+    <view class="name_s">
+      地址
+    </view>
+    <input class="num" placeholder="请输入" value="{{address}}" bindinput="inpts1" />
+  </view>
+    <view class="name">
+    <view class="name_s">
+      电话
+    </view>
+    <input class="num" placeholder="请输入" value="{{mobile}}" bindinput="inpts2" />
+  </view>
+    <view class="name">
+    <view class="name_s">
+      银行
+    </view>
+    <input class="num" placeholder="请输入" value="{{bank}}" bindinput="inpts3" />
+  </view>
+   <view class="name">
+    <view class="name_s">
+      银行账号
+    </view>
+    <input class="num" placeholder="请输入" value="{{bank_num}}" bindinput="inpts4" />
+  </view>
+</view>
+
+<view class="btns" bindtap="btnFn">
+  确定
+</view>

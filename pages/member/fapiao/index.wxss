@@ -1,0 +1,65 @@
+/* pages/member/fapiao/index.wxss */
+.cont{
+  width: 90%;
+  padding: 20rpx;
+  background: white;
+  margin: 0 auto;
+  margin-bottom: 10rpx; 
+  margin-top: 10rpx;
+  
+}
+.name{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.name_s{
+  width: 30%;
+  font-size: 28rpx;
+  padding:10rpx 0;
+}
+.num{
+  width: 68%;
+  margin-left: 2%;
+  font-size: 28rpx;
+}
+.bina{
+    margin: 0 auto;
+  margin-top:20rpx;
+  width: 98%;
+  border-top:1rpx solid #eee;
+  display: flex;
+  justify-content: center;
+  padding-top:20rpx;
+  font-size: 26rpx;
+
+}
+.ddd{
+  width: 68%;
+}
+.bianij{
+ font-size: 28rpx;
+  width: 16%;
+  text-align: center;
+
+}
+.dele{
+ font-size: 28rpx;
+   width: 16%;
+  text-align: center;
+
+  color: red;
+}
+.fix{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: red;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left:0;
+}
